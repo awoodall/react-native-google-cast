@@ -17,12 +17,13 @@ Pod::Spec.new do |s|
 
   s.dependency      'React'
 
-  s.subspec 'Default' do |ss|
-    ss.dependency "#{package['name']}/RNGoogleCast"
-    ss.dependency 'google-cast-sdk', '<= 4.3.0'
-  end
+#   s.subspec 'Default' do |ss|
+#     ss.dependency "#{package['name']}/RNGoogleCast"
+#     ss.dependency 'google-cast-sdk', '<= 4.3.0'
+#   end
 
-  s.subspec 'NoBluetooth' do |ss|
+#   s.subspec 'NoBluetooth' do |ss|
+    s.subspec 'Default' do |ss|
     ss.dependency "#{package['name']}/RNGoogleCast"
     ss.dependency 'google-cast-sdk-no-bluetooth'
   end
